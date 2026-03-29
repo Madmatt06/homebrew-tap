@@ -14,8 +14,8 @@ cask "godot@4.4.1" do
     strategy :github_latest
   end
 
-  app "Godot_mono.app", target: "Godot#{version}_mono.app"
-  binary "#{appdir}/Godot#{version}_mono.app/Contents/MacOS/Godot", target: "godot#{version}_mono"
+  app "Godot_mono.app", target: "Godot_mono #{version}.app"
+  binary "#{appdir}/Godot_mono #{version}.app/Contents/MacOS/Godot", target: "godot_mono #{version}"
 
   uninstall quit: "org.godotengine.godot"
 
