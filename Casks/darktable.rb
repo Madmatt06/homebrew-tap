@@ -17,8 +17,6 @@ cask "darktable" do
       depends_on macos: :sequoia
     end
 
-    disable! date: "2026-09-01", because: :fails_gatekeeper_check
-
     app "darktable.app"
 
     uninstall quit: "org.darktable"
