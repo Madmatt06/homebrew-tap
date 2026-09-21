@@ -13,6 +13,8 @@ cask "godot@4.4.1" do
     strategy :github_latest
   end
 
+  depends_on :macos
+
   app "Godot_mono.app", target: "Godot_mono #{version}.app"
   binary "#{appdir}/Godot_mono #{version}.app/Contents/MacOS/Godot", target: "godot_mono #{version}"
 
